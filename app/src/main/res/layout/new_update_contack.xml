@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round_text_tield"
+    android:backgroundTint="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="11dp"
+        android:backgroundTint="@color/material_on_background_emphasis_medium"
+        app:cardCornerRadius="30dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/round_text_tield"
+            android:backgroundTint="@color/Secondary_dark"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dialog_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Add Contact"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/Update_img"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/img"
+
+                tools:ignore="ContentDescription" />
+
+            <EditText
+                android:id="@+id/Update_Name"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:autofillHints="name"
+                android:background="@drawable/round_text_tield"
+                android:hint="Contact Name"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText,hard" />
+
+
+            <EditText
+                android:id="@+id/Update_Number"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:autofillHints=""
+                android:background="@drawable/round_text_tield"
+                android:hint="Mobile NUmber"
+                android:inputType="phone"
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/Save_new"
+                android:layout_width="80dp"
+                android:layout_height="48dp"
+                android:backgroundTint="#FF000000"
+                android:text="Save"
+                tools:ignore="HardcodedText" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
